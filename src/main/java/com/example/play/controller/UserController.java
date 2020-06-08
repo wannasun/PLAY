@@ -14,8 +14,9 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	@RequestMapping("getUser")
-	public User GetUser() {
-		return userService.Sel();
+	@RequestMapping("/getUser")
+	public String GetUser() {
+		User sel=userService.Sel();
+		return sel.toString();
 	}
 }

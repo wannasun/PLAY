@@ -9,8 +9,8 @@
 		<result column="sex" jdbcType="VARCHAR" property="sex" />
 	</resultMap>
 
-	<select id="Sel" resultMap="BaseResultMap">
-		select * from sys.User
+	<select id="Sel" resultType="com.example.play.domain.User">
+		select * from User
 	</select>
 
 </mapper>

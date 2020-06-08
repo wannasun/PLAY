@@ -10,4 +10,8 @@ public class User {
 	private String name;
 	private String age;
 	private String sex;
+	 @Override
+	    public String toString() {
+	        return id + "," + name + "," + age + "," + sex;
+	    }
 }
