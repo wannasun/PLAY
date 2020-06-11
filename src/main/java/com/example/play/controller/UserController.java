@@ -1,5 +1,7 @@
 package com.example.play.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +18,7 @@ public class UserController {
 	
 	@RequestMapping("/getUser")
 	public String GetUser() {
-		User sel=userService.Sel();
+		List<User> sel=userService.Sel();
 		return sel.toString();
 	}
 }
